@@ -1,4 +1,6 @@
-on: push
+on: 
+  push:
+    branches: dev-teste
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -24,3 +26,4 @@ jobs:
         server: 154.53.52.2
         username: dev-teste@magos.app.lily.com.br
         password: 5+GTZM6j;9c_
+        local-dir: ./build/
