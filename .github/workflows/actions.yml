@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: envs
+      uses: actions/checkout@v2
       env:
         REACT_TECNOLOGIA: ReactJS
 
