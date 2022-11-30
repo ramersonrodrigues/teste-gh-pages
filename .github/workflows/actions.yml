@@ -6,12 +6,9 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+    env:
+      REACT_TECNOLOGIA: ReactJS
     steps:
-    - name: envs
-      uses: actions/checkout@v2
-      env:
-        REACT_TECNOLOGIA: ReactJS
-
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
 
